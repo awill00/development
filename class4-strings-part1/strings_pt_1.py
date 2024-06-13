@@ -178,9 +178,9 @@ fav_sport = 'football'
 '''
 Create a variable called index_of_y and apply the index string method to locate the index position of the letter y.  What happens if we try to locate a letter that does not exist in our string?
 '''
-fav_car = 'toyota'
-index_of_y = fav_car.index('y')
-print(index_of_y)
+# fav_car = 'toyota'
+# index_of_y = fav_car.index('y')
+# print(index_of_y)
 
 ''' More string methods '''
 
@@ -214,13 +214,13 @@ print(index_of_y)
 
 
 # isdigit() Returns True if all characters in the string are digits
-num_four = '12345'
-num_five = '4.53'
-num_six = 'five'
+# num_four = '12345'
+# num_five = '4.53'
+# num_six = 'five'
 
-print(num_four.isdigit())
-print(num_five.isdigit())
-print(num_six.isdigit())
+# print(num_four.isdigit())
+# print(num_five.isdigit())
+# print(num_six.isdigit())
 
 
 
@@ -322,9 +322,9 @@ song_three = 'Sing for the moment'
 
 
 # join() Joins the elements of an iterable to the end of the string
-my_colors = ['blue ', 'yellow ', 'red ']
-result = '*'.join(my_colors)
-print(result)
+# my_colors = ['blue ', 'yellow ', 'red ']
+# result = '*'.join(my_colors)
+# print(result)
 
 
 # lower() Converts a string into lower case
@@ -408,10 +408,16 @@ True
 '''
 #Get user input
 user_input = input('What is your magic word?')
-print(user_input)
+user_input = user_input.strip()
+
 
 #test value, which test are we using?
+number_or_not = user_input.isdigit()
+
+
 #provide output
+print(number_or_not)
+
 '''
 Take a word from the user. Then take a number from the user. Then print whether the word is longer than the number.
 
@@ -428,7 +434,13 @@ Hint: use len() to find the length of the string, and don’t forget to cast to 
 
 '''
 
-
+# Inputs
+word_input = input('What is your favorite word?')
+number_input = input('What is your favorite number?')
+length_of_word = len(word_input)
+number_input = int(number_input)
+word_vs_num = (length_of_word > number_input)
+print(word_vs_num)
 
 
 
@@ -439,7 +451,21 @@ What string method can you use to count the number of vowels?
 
 '''
 
+# Get input from the user
 
+user_input = input('Please enter your word: ')
+
+# sanatize
+user_input = user_input.strip()
+
+# Test vowel count  count() method
+
+total_count = user_input.lower().count('a') + user_input.lower().count('e') + user_input.lower().count('i') + user_input.lower().count('o') + user_input.lower().count('u')
+
+
+# added lower() incase user types upper case
+
+print(total_count)
 
 
 ''' Exercise - Challenge
