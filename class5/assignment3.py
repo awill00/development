@@ -15,8 +15,13 @@ Test your code on a few inputs to make sure it works!
 # Get input 
 email = input("Hello, please enter your email: ")
 
-print(email)
+
 # Clean data
+email = email.strip() # cleaning the string with strip method
+
+print(email)
+print(len(email))
+
 
 # Test 1: It has a "." at the third-to-last index
 
