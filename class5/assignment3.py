@@ -19,13 +19,18 @@ email = input("Hello, please enter your email: ")
 # Clean data
 email = email.strip() # cleaning the string with strip method
 
-print(email)
-print(len(email))
+
+
 
 
 # Test 1: It has a "." at the third-to-last index
+test_1 = (email[-4] == '.')
+print(f'Test 1: Does {email} have a "." at the third-to-last index? ', test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
+test_2 = ('@' in email[-5::-1]) # use "in" keyword for true/false(Boolean)
+print(f'Test 2: Does {email} have exactly one "@" symbol, at the fifth-to-last index or earlier?',test_2)
+
 
 # Test 3: There is at least one character before the "@" symbol
 

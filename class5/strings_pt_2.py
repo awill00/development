@@ -128,33 +128,42 @@ find_g= fav_season[-1]
 find_i= fav_season[-3]
 find_p = fav_season[-4]
 
-print(find_g)
-print(find_i)
-print(find_p)
+# print(find_g)
+# print(find_i)
+# print(find_p)
 
 
 
 ''' Slicing '''
 # There are 3 parameters available with indexing with bracket notation [start:stop:step]
 fav_food = 'spaghetti'
+slice_of_fav_food = fav_food[2:7]
+#print(slice_of_fav_food)
 
 
 
 # Using slicing please create a string that accesses 'rica' in 'America'
 
 country = 'America'
-
+slice_of_country = country[3:7]
+#print(slice_of_country)
 
 
 # Using slicing please create a string that accesses 'ora' in 'Dora the explorer'
 cartoon = 'Dora the explorer'
+slice_of_cartoon = cartoon[1:4]
+#print(slice_of_cartoon)
 
 
 # Using slicing please create a string that accesses 'explo' in 'Dora the explorer'
+slice_of_cartoon2 = cartoon[9:14]
+#print(slice_of_cartoon2)
 
 
 # Using slicing please create a string that accesses 'albo' in 'Rocky Balboa'
 boxer = 'Rocky Balboa'
+slice_of_boxer = boxer[7:12]
+#print(slice_of_boxer)
 
 
 
