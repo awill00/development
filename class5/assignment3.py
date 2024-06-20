@@ -33,6 +33,10 @@ print(f'Test 2: Does {email} have exactly one "@" symbol, at the fifth-to-last i
 
 
 # Test 3: There is at least one character before the "@" symbol
+'''test_3 = (email[0] != '@')#test if the first character is not equal to at "!" is not
+'''
+test_3 = (email.index('@') > 0)# another solution
+print(f'Test 3: There is at least one character before the "@" symbol in {email}', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
 
