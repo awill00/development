@@ -208,14 +208,39 @@ system_username, system_password = "admin" , "password" #can combine also
 #print(username, password)
 
 # Get sign on and pass from user
-username = input("Enter your username: ")
-password = input("Enter your password: ")
+# username = input("Enter your username: ")
+# password = input("Enter your password: ")
 #print(username, password)
 
 
 # Evaluate and Output (using conditionals, boolean operators, and logical operators)
 
-if system_username == username and system_password == password: # if the username and password match what is in the system_username and password then it is correct
-     print('Login successful.')
-else:
-    print('Incorrect username or password.')
+# if system_username == username and system_password == password: # if the username and password match what is in the system_username and password then it is correct
+#      #print('Login successful.')
+# else:
+#     print('Incorrect username or password.')
+
+
+
+'''Take a variable ‘age’ which is of positive value and check the following:
+ 
+If the age is less than 10, print “Children”.
+ 
+If the age is more than 60, print ‘senior citizen’
+ 
+If it is between 10 and 60, print ‘adult’'''
+
+# Get the age of user
+
+user_age = input('What is your age?: ')
+
+# Evaluate if age is positive and if an child, adult, or senior citizen
+
+if user_age < 10:
+    print('Children')
+elif user_age > 60:
+    print('Senior Citizen')
+elif user_age >= 10 and <= 60:
+    print('adult')
+    
+ 
