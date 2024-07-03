@@ -136,13 +136,20 @@ movies.remove('avengers endgame')
 
 # reverse() Reverses the order of the list
 num_list = [1, 2, 3, 4, 5, 6]
+num_list.reverse()# no parameters needed
+#print(num_list) # will reverse the entire list
 
 # sort() Sorts the list
 
 letters = ['z', 'b',  'f', 'r']
-
+letters.sort()
+#print(letters)
 
 nums = [4, 5, 10, 19.8, 1, 1004]
+nums.sort()
+#print(nums)
+
+#sorted() this will return a new list
 
 
 ''' Exercise
@@ -157,7 +164,19 @@ planets = ["mercury", "venus", "earth", "mars"]
 
 planets = ["mercury", "venus", "earth", "mars"]
 
+counter = 0
+output = ''
 
+for p in planets:
+   num_and_planets = f'{counter}: {p} '
+   output += num_and_planets
+   counter += 1
+   
+#print(output)   
+
+
+    
+    
 ''' Exercise
 
 Write some code that takes one list and creates a second list that has the type for each entry in the list. Hint: Use the type() function and a for loop
@@ -169,16 +188,30 @@ Make sure you filter out any repeats.
 
 old_list = ['Wednesday','Thursday', 'Friday', True, ['blue', 'green', 'red'], {"First Name": "Michelle"}, 12.23, {'Sunday', 'Monday', 'Tuesday'}, (1, 2, 3, 4, 5)]
 
+new_list = []
 
+for o in old_list:
+   new_list.append(type(o))
+   
+#print(new_list)   
 
-
+#using set to remove duplicates
+no_repeats = list(set(list(new_list)))
+#print(no_repeats)
 '''
 Exercise: List of Pets
 
 You want to make a list containing the names of pets. Keep prompting the user for a pet name until they enter "stop". If it's a new pet, add it to the list. If the list already has that pet, don't add it.
 
 '''
+#variables
+pets = []
+pets_name = ''
 
+while True:
+   pets_name = input("Please enter the name of your pet: ")
+   print(pets_name)
+   break
 
 
 
