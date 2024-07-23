@@ -243,7 +243,10 @@ You must format the print statement like this:
 print("You entered",userin)
 How can you add sep and end keywords to get the exact formatting shown above?
 '''
-
+userin = ''
+user_input = input('Create a username')
+user_input = userin
+print('You entered', userin, sep=':', end='')
 
 '''
 You need to write a script that will generate an email to a customer who has just made a purchase. You have 3 variables:
